@@ -1,0 +1,237 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+font-family: 'Poppins','Open Sans', Arial;
+ min-height: max-content;
+ 
+}
+
+
+nav {
+  height: 80px;
+  padding: px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url(bgchiz.png);
+     background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+}
+ 
+.logo-container {
+  
+  padding-right: 100px;
+  filter: drop-shadow(100px 5px 100px #ffffff);
+  
+}
+
+.logo {
+  width: 200px; 
+  height: 100px; 
+  padding: 10px;
+
+}
+.logo:hover{
+    filter: drop-shadow(0px 3px 16px orange);
+}
+
+.nav-items {
+  padding-right: 3rem;
+   display: flex;
+  color: black;
+}
+
+.nav-items a {
+  text-decoration: solid;
+  color: white;
+  font-size: 1rem;
+  padding: 0 1.5rem;
+
+}
+
+.nav-items a:hover {
+  color: #000;
+ color: ORANGE;
+  text-shadow:0px 0px 30px yellow;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  
+}
+
+.center{
+  margin: auto;
+  width: 640px; 
+  padding: 50px;
+  font-family: 'Arial', sans-serif; 
+  color: #33475b;    
+}
+.hero {
+  background-image: url(bgchiz.png);
+     background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+  
+}
+
+
+
+.hero-container {
+  grid-template-columns: 1fr 1fr;
+  height: 95vh;
+  padding: 1rem 150px; 
+ display: flex;
+}
+
+.column-left {
+  padding: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+   align-items: flex-start;
+   color: #000;
+}
+
+.column-left h1 {
+  margin-bottom: 0.2rem;
+  font-size: 7rem;
+  FONT-WEIGHT: BLACK;
+  color: #FFC736;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 136, 0);
+}
+.column-left h1:hover{
+  color: #fdfaf3;
+  filter: drop-shadow(0 0 1.75rem rgb(218, 105, 0));
+}
+.column-left h2{ 
+  color:  #FFC736;
+   display: flex;
+   font-size: 2.5rem;
+   -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+.column-left h2 span{
+  color: white;
+  text-decoration: none;
+}
+span{
+ font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #FFC736;
+ color: white;
+}
+
+.column-left h2{ 
+  color:  #FFC736;
+   display: flex;
+   font-size: 1.9rem;
+}
+.column-left p {
+ 
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.9;
+  color: white;
+}
+button {
+  width: 250px;
+  padding: 1rem 2rem;
+  font-size: 0.8rem;
+  border: none;
+  color: white;
+  background: #6DCD22;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+button:hover {
+  background: #6dcd22;
+ -webkit-box-shadow:0px 0px 113px 13px #6DCD22 ;
+}
+
+nav .btn{
+  padding: 0.5rem 1rem;
+  margin: 0 0 0 0.20rem;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  font-size: 13px;
+  align-items: end;
+    right: 100px;
+  
+}
+
+.column-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-image {
+  width: 27cm;
+  height: 22cm;
+ padding-left: 140px;
+  left: 100px;
+  top: 1px;
+filter: drop-shadow(0 0 9.75rem ORANGE);
+  cursor: pointer;
+ display: flex;
+  
+}
+
+.hero-image:hover{
+  filter: drop-shadow(-7px 1px 43px );
+  transition: all 0.3s ease-in;
+  
+ animation: myAnim 5s linear 0s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  .arrow-main {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+
+  }
+}
+.main:hover {
+  filter: drop-shadow(0 0 1.75rem rgb(255, 188, 43));
+  }
